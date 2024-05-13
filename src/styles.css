@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'YiSunShinRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #040612;
+    color: white;
+    font-family: "Nanum Myeongjo", 'YiSunShinRegular', sans-serif;
+}
+
+#main-container {
+    margin: 0 auto;
+}
