@@ -30,7 +30,7 @@
                         <input type="radio" name="genre" value="random" >
                         <label for="random">랜덤</label>
                     </div>
-                    <!-- TODO: Apply flexbox -->
+                    
                     <div class="answer-box">
                         <input type="radio" name="genre" value="contrasts" >
                         <label for="random">빛과 어둠</label>
@@ -50,20 +50,21 @@
                 </div>
             </div>
 
-            <div id="generate-button">
-                <input type="submit" value="생성하기">
+            <div id="generate-button-container">
+                <input type="submit" id="generate-button" class="basic-button" value="생성하기">
             </div>
             
             <div id="nickname-container">
                 <div id="nickname-box">
-                   <span id="nickname"></span>
+                   <span id="nickname-upper" class="nickname-style">심연의 그림자</span>
+                   <span id="nickname-below" class="nickname-style">블랙쉐도우</span>
                 </div>
             </div>
         </main>
         <footer>
-            <button class="info-button">정보</button>
-            <button class="info-button">창시자</button>
-            <button class="info-button">수행자</button>
+            <button class="info-button basic-button">정보</button>
+            <button class="info-button basic-button">창시자</button>
+            <button class="info-button basic-button">수행자</button>
         </footer>
     </div>
 
