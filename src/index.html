@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이세카이 닉네임 생성기</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="이세카이에서 사용할 닉네임을 생성합니다.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <div id="title">
+                <h1>이세카이 닉네임 생성기</h1>
+            </div>
+            <div id="sub-title">
+                <span>랜덤으로 이세카이에서 사용할 닉네임을 생성합니다.</span>
+            </div>
+         
+        </header>
+
+        <main>
+            <div id="question-container">
+                <div id="question-box">
+                    <span>선호하는 장르를 고르시오.</span>
+                </div>
+                <div id="answer-container">
+                    <div class="answer-box">
+                        <input type="radio" name="genre" value="random" >
+                        <label for="random">랜덤</label>
+                    </div>
+                    <!-- TODO: Apply flexbox -->
+                    <div class="answer-box">
+                        <input type="radio" name="genre" value="contrasts" >
+                        <label for="random">빛과 어둠</label>
+                    </div>
+                    
+                    <div class="answer-box">
+                        <input type="radio" name="genre" value="elements" >
+                        <label for="random">자연</label>
+                    </div> 
+                </div>
+            </div>
+
+            <div id="word-count-container">
+                <div id="word-count-box">
+                    <input type="checkbox" name="word-counts" value="2">
+                    <label for="random">랜덤</label>
+                </div>
+            </div>
+
+            <div id="generate-button">
+                <button>생성하기</button>
+            </div>
+            
+            <div id="nickname-container">
+                <div id="nickname-box">
+                   <span id="nickname"></span>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
