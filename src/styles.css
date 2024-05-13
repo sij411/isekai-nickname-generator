@@ -47,6 +47,10 @@ header {
   
 }
 
+.answer-box {
+    margin: 0 20px;
+}
+
 #word-count-container {
     margin-bottom: 50px;
 }
