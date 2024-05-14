@@ -86,3 +86,6 @@ dist
 
 # DynamoDB Local files
 .dynamodb/
+
+# words data
+src/data.js
