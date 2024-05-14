@@ -28,7 +28,7 @@
                 <div id="answer-container">
                     <div class="answer-box">
                         <label>
-                            <input type="radio" name="genre" value="random" >
+                            <input type="radio" name="genre" value="etc" checked>
                             랜덤
                         </label>
                     </div>
@@ -52,8 +52,7 @@
             <div id="word-count-container">
                 <div id="word-count-box">
                     <label>
-                        <input type="checkbox" name="word-counts" value="2" required >
-                
+                        <input type="checkbox" name="word-counts" value="2">
                         2어절
                     </label>
                 </div>
@@ -65,8 +64,8 @@
             
             <div id="nickname-container">
                 <div id="nickname-box">
-                   <span id="nickname-upper" class="nickname-style">심연의 그림자</span>
-                   <span id="nickname-below" class="nickname-style">블랙쉐도우</span>
+                   <span id="nickname-upper" class="nickname-style"></span>
+                   <span id="nickname-lower" class="nickname-style"></span>
                 </div>
             </div>
         </main>
@@ -84,7 +83,8 @@
             
         </footer>
     </div>
-
-    <script src="index.js"></script>
+    
+    
 </body>
+<script type="module" src="./generate.js"></script>
 </html>
