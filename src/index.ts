@@ -6,14 +6,14 @@ const workerUrl = new URL(
 );
 const wasmUrl = new URL("sql.js-httpvfs/dist/sql-wasm.wasm", import.meta.url);
 
-async function load(url: string) {
+async function load() {
   const worker = await createDbWorker(
     [
       {
         from: "inline",
         config: {
           serverMode: "full",
-          url: url,
+          url: "/db.sqlite3",
           requestChunkSize: 4096,
         },
       },
@@ -21,7 +21,10 @@ async function load(url: string) {
     workerUrl.toString(),
     wasmUrl.toString()
   );
-  return worker;
+
+  const result = await worker.db.query(`select * from description`);
+
+  document.body.textContent = JSON.stringify(result);
 }
 
-export { load }; // only `load` is visible to the importer
+load(); // only `load` is visible to the importer
