@@ -88,4 +88,4 @@ dist
 .dynamodb/
 
 # words data
-src/data.js
+**/data.js
