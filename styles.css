@@ -15,6 +15,7 @@ body {
     background-color: #040612;
     color: white;
     font-family: "Nanum Myeongjo", 'YiSunShinRegular', sans-serif;
+    overflow: auto;
 }
 
 #main-container {
@@ -122,4 +123,8 @@ footer {
 
 p {
     overflow: auto;
+}
+
+#blackshadow-main-container {
+    width: 100%;
 }
