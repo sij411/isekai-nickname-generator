@@ -1,7 +1,8 @@
 # isekai-nickname-generator
 이세계 닉네임 생성기 
 
-![](./mainpage.png)
+<img src="./mainpage.png" alt="Mainpage" width="200"/>
+
 # 소개
 
 라이즈 은석의 블랙쉐도우 세계관에 영감을 받아 만든 이세카이 닉네임 생성기입니다. 
