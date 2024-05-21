@@ -117,6 +117,9 @@ footer {
 
 .link-component {
     color: #8D728E;
-    text-decoration: none;
    
+}
+
+p {
+    overflow: auto;
 }
