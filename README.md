@@ -1,7 +1,7 @@
 # isekai-nickname-generator
 이세계 닉네임 생성기 
 
-<img src="./mainpage.png" alt="Mainpage" width="200"/>
+<img src="./mainpage.png" alt="Mainpage" width="300"/>
 
 # 소개
 
