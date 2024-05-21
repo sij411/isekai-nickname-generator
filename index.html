@@ -1,90 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
+  <head>
     <title>이세카이 닉네임 생성기</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="이세카이에서 사용할 닉네임을 생성합니다.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="이세카이에서 사용할 닉네임을 생성합니다."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="이세카이 닉네임 생성기" />
+    <meta property="og:type" content="website" />
+    <!--TODO: 배포 후에 사이트 url 추가-->
+    <meta property="og:url" content="" />
+    <meta property="twitter:title" content="이세카이 닉네임 생성기" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
-<body>
+  <body>
     <div id="main-container">
-        <header>
-            <div id="title">
-                <h1>이세카이 닉네임 생성기</h1>
-            </div>
-            <div id="sub-title">
-                <span>랜덤으로 이세카이에서 사용할 닉네임을 생성합니다.</span>
-            </div>
-         
-        </header>
+      <header>
+        <div id="title">
+          <h1>이세카이 닉네임 생성기</h1>
+        </div>
+        <div id="sub-title">
+          <span>랜덤으로 이세카이에서 사용할 닉네임을 생성합니다.</span>
+        </div>
+      </header>
 
-        <main>
-            <div id="question-container">
-                <div id="question-box">
-                    <span>선호하는 장르를 고르시오.</span>
-                </div>
-                <div id="answer-container">
-                    <div class="answer-box">
-                        <label>
-                            <input type="radio" name="genre" value="etc" checked>
-                            랜덤
-                        </label>
-                    </div>
-                    
-                    <div class="answer-box">
-                        <label>
-                            <input type="radio" name="genre" value="contrasts" >
-                            빛과 어둠
-                    </label>
-                    </div>
-                    
-                    <div class="answer-box">
-                        <label>
-                            <input type="radio" name="genre" value="elements" >
-                            자연
-                        </label>
-                    </div> 
-                </div>
+      <main>
+        <div id="question-container">
+          <div id="question-box">
+            <span>선호하는 장르를 고르시오.</span>
+          </div>
+          <div id="answer-container">
+            <div class="answer-box">
+              <label>
+                <input type="radio" name="genre" value="etc" checked />
+                랜덤
+              </label>
             </div>
 
-            <div id="word-count-container">
-                <div id="word-count-box">
-                    <label>
-                        <input type="checkbox" name="word-counts" value="2">
-                        2어절
-                    </label>
-                </div>
+            <div class="answer-box">
+              <label>
+                <input type="radio" name="genre" value="contrasts" />
+                빛과 어둠
+              </label>
             </div>
 
-            <div id="generate-button-container">
-                <input type="submit" id="generate-button" class="basic-button" value="생성하기">
+            <div class="answer-box">
+              <label>
+                <input type="radio" name="genre" value="elements" />
+                자연
+              </label>
             </div>
-            
-            <div id="nickname-container">
-                <div id="nickname-box">
-                   <span id="nickname-upper" class="nickname-style"></span>
-                   <span id="nickname-lower" class="nickname-style"></span>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <a href="">
-                <button class="info-button basic-button">정보</button>
-            </a>
-            <a href="">
-                <button class="info-button basic-button">창시자</button>
-            </a>
-            <a href="">
-                <button class="info-button basic-button">수행자</button>
-            </a>
-            
-            
-        </footer>
+          </div>
+        </div>
+
+        <div id="word-count-container">
+          <div id="word-count-box">
+            <label>
+              <input type="checkbox" name="word-counts" value="2" />
+              2어절
+            </label>
+          </div>
+        </div>
+
+        <div id="generate-button-container">
+          <input
+            type="submit"
+            id="generate-button"
+            class="basic-button"
+            value="생성하기"
+          />
+        </div>
+
+        <div id="nickname-container">
+          <div id="nickname-box">
+            <span id="nickname-upper" class="nickname-style"></span>
+            <span id="nickname-lower" class="nickname-style"></span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <a href="./info.html">
+          <button class="info-button basic-button">정보</button>
+        </a>
+        <a href="./blackshadow.html">
+          <button class="info-button basic-button">창시자</button>
+        </a>
+      </footer>
     </div>
-    
-    
-</body>
-<script type="module" src="./generate.js"></script>
+  </body>
+  <script type="module" src="./generate.js"></script>
 </html>
